@@ -16,12 +16,14 @@ Modifier ou créer le fichier 50-tablet.conf&#x20;
 
 Ajouter dans ce fichier
 
-`Section "InputClass"`\
-&#x20;   `Identifier "Tablet"`\
-&#x20;   `Driver "wacom"`\
-&#x20;   `MatchDevicePath "/dev/input/event*"`\
-&#x20;   `MatchUSBID "172f:0034"`\
-`EndSection`
+```
+Section "InputClass"
+    Identifier "Tablet"
+    Driver "wacom"
+    MatchDevicePath "/dev/input/event*"
+    MatchUSBID "172f:0034"
+EndSection
+```
 
 Déco, reco la session pour être sûr que tout fonctionne bien
 
