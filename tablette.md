@@ -6,13 +6,17 @@ Résumé rapide de la doc [https://wiki.archlinux.org/title/Wacom\_tablet#Non-Wa
 
 Installation de pilotes et outils nécessaire
 
-`yay -S digimend-kernel-drivers-dkms subutils kcm-wacomtablet`
+```
+yay -S digimend-kernel-drivers-dkms subutils kcm-wacomtablet
+```
 
-Éxécuter la commande `lsusb` pour afficher les périphériques usb connectés. trouver la tablette dans la liste `Bus 007 Device 003: ID 172f:0034 Waltop International Corp. Slim Tablet 12.1"`
+Exécuter la commande `lsusb` pour afficher les périphériques usb connectés. trouver la tablette dans la liste `Bus 007 Device 003: ID 172f:0034 Waltop International Corp. Slim Tablet 12.1"`
 
-Modifier ou créer le fichier 50-tablet.conf&#x20;
+```
+nano /etc/X11/xorg.conf.d/50-tablet.conf
+```
 
-`nano /etc/X11/xorg.conf.d/50-tablet.conf`
+Modifier ou créer le fichier 50-tablet.conf nano /etc/X11/xorg.conf.d/50-tablet.conf
 
 Ajouter dans ce fichier
 
